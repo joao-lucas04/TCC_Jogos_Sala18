@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+}
+.palavras{
+    font-size: 18px;
+    color: black;
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 1% 1%;
+}
+#logo:hover{
+    transform: scale(1.2);
+    cursor: pointer /* Aumenta o tamanho em 10% quando o mouse está em cima */
+}
