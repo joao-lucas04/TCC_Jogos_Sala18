@@ -1,34 +1,25 @@
-let tema = false; //variavel do tipo boolean para ver se esta ligado ou desligado o tema de cores
-let img_logo = document.getElementById("logo"); //variavel para a logo da empresa
+function verificarVisibilidade(classe) {
+    var elementos = document.querySelectorAll('.' + classe);
+    var windowHeight = window.innerHeight;
 
-let cor_letras = document.getElementsByClassName("palavras"); //variavel para identificar a classe do elemento
-let background = document.body; //variavel para identificar o body
-
-function logo(){ //caso o usuario clique na logo, mudará o tema de cores do site
-    if(tema) {
-        tema_claro();
-        tema = false;
-    } else {
-        tema_escuro();
-        tema = true;
-    }
+    elementos.forEach(function(elemento) {
+        var posicao = elemento.getBoundingClientRect().top;
+        if (posicao < windowHeight * 0.75) {
+            elemento.classList.add('aparecer');
+        } else {
+            elemento.classList.remove('aparecer'); // Remover a classe se o elemento não estiver mais visível
+        }
+    });
 }
 
-function tema_claro(){
-    background.style.backgroundColor="#ffffff";
+// Adicionar um event listener para verificar a visibilidade sempre que a página é rolada
+window.addEventListener('scroll', function() {
+    verificarVisibilidade('msv');
+    verificarVisibilidade('sobre');
+});
 
-    img_logo.src = 'img/logo.png';
+// Chamar a função para verificar a visibilidade quando a página é carregada
+verificarVisibilidade('msv');
+verificarVisibilidade('sobre');
 
-    for (let i = 0; i < cor_letras.length; i++) {
-        cor_letras[i].style.color="#000000"; 
-    }
-}
-function tema_escuro(){
-    background.style.backgroundColor="#000000";
 
-    img_logo.src = 'img/logo_claro.png';
-
-    for (let i = 0; i < cor_letras.length; i++) {
-        cor_letras[i].style.color="#ffffff"; 
-    }
-}
