@@ -20,7 +20,7 @@
 
 body{
     background-color: #000;
-    height: 300vw;
+    height: 600vw;
 }
 
 #cabecalho{
@@ -32,31 +32,37 @@ body{
     justify-content: space-evenly;
     z-index: 1;
 }
-
 #logo_cabeca{
     width: 45px;
     height: 65px;
     margin-top: 1.3vw;
+    margin-left: 5vw;
 }
-
 .opcoes_cabeca{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: #FFFFFF;
     margin-top: 2.8vw;
-    padding-right: 3vw;
+    margin-right: 3vw;
 }
-
+.opcoes_cabeca:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 #opcoes{
     display: inline-flex;
     margin-left: 38vw;
 }
 
+
+
 video{
     width: 100%;
 }
+
+
+
 
 #jogo{
     display: flex;
@@ -64,11 +70,9 @@ video{
     justify-content: center;
     font-size: 60px;
 }
-
 .descricao{
     margin-left: 5.5vw;
 }
-
 .titulo{
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -92,34 +96,47 @@ video{
     font-size: 18px;
     color: #FFFFFF;
 }
-
-#botoes{
+.botoes{
     display: flex;
     justify-content: space-evenly;
     margin-top: 2vw;
 }
-button{
-    background-color: #bebebe;
+button {
+    background-color: #b3b3b3;
+    color: #333;
     border: none;
     border-radius: 8px;
     padding: 1vw 2vw;
-    font-family: "Poppins", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #fdfdfd; /* Mudança de cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0px 0px 13px #bebebe; /* Adiciona uma sombra */
 }
 
-iframe{
-    position: relative;
-    width: 900px;
-    height: 500px;
-    left: 230px;
+
+
+
+#trailer{
+    text-align: center;
     margin-top: 3.3vw;
 }
+iframe{
+    width: 900px;
+    height: 500px;
+}
+
+
+
 
 .sobre{
     display: flex;
-    margin-top: 3vw;
+    margin-top: 5vw;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -127,7 +144,6 @@ iframe{
 .sobre.aparecer {
     opacity: 1;
 }
-
 .txt1{
     margin-left: 15vw;
     margin-right: 5.5vw;
@@ -155,13 +171,15 @@ iframe{
     border-radius: 30px;
 }
 
+
+
 .sobre_msv{
     display: flex;
-    margin-top: 7vw;
+    margin-top: 3vw;
     justify-content: space-around;
 }
 .txt_msv{
-    margin-top: 2vw;
+    margin-top: 1vw;
     width: 23vw;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -179,138 +197,46 @@ iframe{
 
 
 
+.quem_container{
+    margin-top: 9.5vw;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.quem_container.aparecer {
+    opacity: 1;
+}
+.quem{
+    display: flex;
+    margin-top: 5vw;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.perfil{
+    width: 165px;
+    height: 170px;
+    border-radius: 80vw;
+}
+.nome{
+    margin-top: 1vw;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+}
 
 
 
-/* Localização 
-
-position: absolute;
-width: 145px;
-height: 36px;
-left: 765px;
-top: 47px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 36px;
-/* identical to box height 
-
-color: #FFFFFF;
+.amigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
-/* Jogos 
-
-position: absolute;
-width: 74px;
-height: 36px;
-left: 634px;
-top: 47px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 36px;
-/* identical to box height 
-
-color: #FFFFFF;
-
-
-
-/* image 1 
-
-position: absolute;
-width: 76px;
-height: 95px;
-left: 47px;
-top: 17px;
-
-background: url(image.png);
-
-
-/* Sobre Nós 
-
-position: absolute;
-width: 123px;
-height: 36px;
-left: 957px;
-top: 47px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 36px;
-/* identical to box height 
-
-color: #FFFFFF;
-
-
-
-/* Menu 
-
-position: absolute;
-width: 69px;
-height: 36px;
-left: 527px;
-top: 47px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 36px;
-/* identical to box height 
-
-color: #FFFFFF;
-
-/* Sapinhos Sapecas 
-
-position: absolute;
-width: 301px;
-height: 48px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 48px;
-/* identical to box height 
-
-color: #FFFFFF;
-
-/* A Sala 18 é uma comunidade de criadores, sonhadores e jogadores apaixonados, fundada por estudantes determinados a transformar suas paixões em realidade. Nossa missão é criar experiências de jogo únicas e emocionantes que cativem os corações dos jogadores ao redor do mundo. 
-
-position: absolute;
-width: 377px;
-height: 279px;
-left: 257px;
-top: 2695px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 195%;
-/* or 35px 
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
-
-/* Tela Principal 
-
-position: relative;
-width: 1200px;
-height: 4248px;
-
-background: linear-gradient(180deg, #000000 34.42%, #333333 46.35%, #666666 58.29%);
-
-/* Tela Principal */
-
-
+footer{
+    background-color: #333;
+    margin-top: 9.5vw;
+    
+}

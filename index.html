@@ -6,26 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sala18">
-    <title>Site Sala18</title>
+    <title>Sala 18: Site</title>
+    <link rel="icon" href="img/logo_claro.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+    <!-- Cabeçalho do site -->
     <header id="cabecalho">
         <img src="img/logo_claro.png" id="logo_cabeca">
         <div id="opcoes">
-            <h1 class="opcoes_cabeca">Menu</h1>
-            <h1 class="opcoes_cabeca">Jogos</h1>
-            <h1 class="opcoes_cabeca">Sobre nós</h1>
-            <h1 class="opcoes_cabeca">Localização</h1>
+            <h1 class="opcoes_cabeca" onclick="transicao('menu')">Menu</h1>
+            <h1 class="opcoes_cabeca" onclick="transicao('jogos')">Jogos</h1>
+            <h1 class="opcoes_cabeca" onclick="transicao('sobre')">Sobre nós</h1>
+            <h1 class="opcoes_cabeca" onclick="transicao('quem')">Quem Somos</h1>
+            <h1 class="opcoes_cabeca" onclick="transicao('local')">Localização</h1>
         </div>
     </header>
 
+    <!-- Video que passa no menu de boas vindas -->
     <video autoplay loop muted playsinline>
-        <source src="img/sala18.mp4" type="video/mp4">
+        <source src="img/sala18_video.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
 
+    <!-- Sobre os Jogos Produzidos -->
     <div id="jogo">
         <img id="capa" src="img/sapecada.jpeg">
         <div class="descricao">
@@ -40,17 +45,19 @@
                 e cheios de vida, desde a exuberante Selva Amazônica até as ruínas antigas de Duckburg. 
             </p>
 
-            <div id="botoes">
+            <div class="botoes">
                 <button>Saiba Mais</button>
                 <button>Baixe Aqui</button>
             </div>
         </div>
     </div>
 
-    <div>
+    <!-- Video de gameplay do jogo apresentado -->
+    <div id="trailer">
         <iframe src="https://www.youtube.com/embed/b-ugdyfd0ao?si=rb5ajtIKv39YdZp7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
+    <!-- Sobre nós / História -->
     <div class="sobre">
         <img class="img_sobre" src="img/logo_claro.png">
         <p class="txt1">
@@ -75,6 +82,7 @@
         <img class="img_sobre" src="img/logo_claro.png">
     </div>
 
+    <!-- Quem somos: Missao visao e valores -->
     <div class="sobre_msv">
         <div class="msv">
             <h1 class="titulo">Visão</h1>
@@ -113,6 +121,74 @@
         </div>
     </div>
 
+    <!-- Quem somos -->
+    <div class="quem_container">
+        <h1 class="titulo" id="equipe">EQUIPE</h1>
+        <div class="quem">
+            <div>
+                <img class="perfil" src="img/perfil.jpeg">
+                <h2 class="nome">Carlos Alarcon</h2>
+                <p class="txt_msv">
+                    Desenvolvedor De Games
+                </p>
+            </div>
+    
+            <div>
+                <img class="perfil" src="img/perfil.jpeg">
+                <h2 class="nome">João Lucas</h2>
+                <p class="txt_msv">
+                    Programador de Games
+                </p>
+            </div>
+    
+            <div>
+                <img class="perfil" src="img/perfil.jpeg">
+                <h2 class="nome">Gustavo Rossilo</h2>
+                <p class="txt_msv">
+                    Designer 3D
+                </p>
+            </div>
+        </div>
+    
+        <div class="quem">
+            <div>
+                <img class="perfil" src="img/perfil.jpeg">
+                <h2 class="nome">Leonardo Macêdo</h2>
+                <p class="txt_msv">
+                    Programador de Games
+                </p>
+            </div>
+    
+            <div>
+                <img class="perfil" src="img/perfil.jpeg">
+                <h2 class="nome">Nickolas Garcia</h2>
+                <p class="txt_msv">
+                    Roterista de Games
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visite nossos amigos -->
+    <div class="quem_container">
+        <h1 class="titulo">Visite Nossos Amigos</h1>
+        <div class="quem">
+            <div class="amigo">
+                <img src="img/perfil.jpeg">
+                <button class="botoes">Visite Gub.com</button>
+            </div>
+    
+            <div class="amigo">
+                <img src="img/perfil.jpeg">
+                <button class="botoes">Visite Gub.com</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé: Localização e Redes Sociais -->
+    <footer>
+        
+    </footer>
 </body>
 <script src="js/script.js"></script>
 </html>

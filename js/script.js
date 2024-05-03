@@ -1,3 +1,42 @@
+function transicao(secao){
+    switch (secao) {
+        case 'menu':
+            window.scrollTo({
+                top: 0, 
+                behavior: 'smooth' 
+            });
+            break;
+            
+        case 'jogos':
+            window.scrollTo({
+                top: 700, 
+                behavior: 'smooth' 
+            });
+
+            break;
+        case 'sobre':
+            window.scrollTo({
+                top: 1700,
+                behavior: 'smooth' 
+            });
+            break;
+
+        case 'quem':
+            window.scrollTo({
+                top: 3045,
+                behavior: 'smooth' 
+            });
+            break;
+
+        case 'local':
+            window.scrollTo({
+                top: 0, 
+                behavior: 'smooth' 
+            });
+            break;
+    }
+}
+
 function verificarVisibilidade(classe) {
     var elementos = document.querySelectorAll('.' + classe);
     var windowHeight = window.innerHeight;
@@ -7,19 +46,18 @@ function verificarVisibilidade(classe) {
         if (posicao < windowHeight * 0.75) {
             elemento.classList.add('aparecer');
         } else {
-            elemento.classList.remove('aparecer'); // Remover a classe se o elemento não estiver mais visível
+            elemento.classList.remove('aparecer');
         }
     });
 }
 
-// Adicionar um event listener para verificar a visibilidade sempre que a página é rolada
 window.addEventListener('scroll', function() {
     verificarVisibilidade('msv');
     verificarVisibilidade('sobre');
+    verificarVisibilidade('quem_container');
 });
-
-// Chamar a função para verificar a visibilidade quando a página é carregada
 verificarVisibilidade('msv');
 verificarVisibilidade('sobre');
+verificarVisibilidade('quem_container');
 
 
