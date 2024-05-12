@@ -30,7 +30,7 @@ function transicao(secao){
 
         case 'local':
             window.scrollTo({
-                top: 0, 
+                top: 10000, 
                 behavior: 'smooth' 
             });
             break;

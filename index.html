@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sala18">
+    <meta name="author" content="João Lucas dos Anjos Pinto">
+    <link rel="shortcut icon" type="imagex/png" href="img/logos/logo_claro.png">
     <title>Sala 18: Site</title>
     <link rel="icon" href="img/logo_claro.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,7 +15,7 @@
 <body>
     <!-- Cabeçalho do site -->
     <header id="cabecalho">
-        <img src="img/logo_claro.png" id="logo_cabeca">
+        <img onclick="transicao('menu')" src="img/logos/logo_claro.png" id="logo_cabeca">
         <div id="opcoes">
             <h1 class="opcoes_cabeca" onclick="transicao('menu')">Menu</h1>
             <h1 class="opcoes_cabeca" onclick="transicao('jogos')">Jogos</h1>
@@ -26,13 +27,13 @@
 
     <!-- Video que passa no menu de boas vindas -->
     <video autoplay loop muted playsinline>
-        <source src="img/sala18_video.mp4" type="video/mp4">
+        <source src="img/video/sala18_video.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
 
     <!-- Sobre os Jogos Produzidos -->
     <div id="jogo">
-        <img id="capa" src="img/sapecada.jpeg">
+        <img id="capa" src="img/fotos/sapecada.jpeg">
         <div class="descricao">
             <h1 class="titulo">Sapinhos Sapecas</h1>
 
@@ -59,7 +60,7 @@
 
     <!-- Sobre nós / História -->
     <div class="sobre">
-        <img class="img_sobre" src="img/logo_claro.png">
+        <img class="img_sobre" src="img/logos/logo_claro.png">
         <p class="txt1">
             "Sapinhos Sapecas" é um jogo baseado nos adoráveis sobrinhos do Tio Patinhas, 
             protagonistas de suas próprias aventuras emocionantes. Os jogadores assumem o 
@@ -79,7 +80,7 @@
             clássicas e quebra-cabeças inteligentes, os jogadores exploram cenários vibrantes 
             e cheios de vida, desde a exuberante Selva Amazônica até as ruínas antigas de Duckburg. 
         </p>
-        <img class="img_sobre" src="img/logo_claro.png">
+        <img class="img_sobre" src="img/logos/logo_claro.png">
     </div>
 
     <!-- Quem somos: Missao visao e valores -->
@@ -126,7 +127,7 @@
         <h1 class="titulo" id="equipe">EQUIPE</h1>
         <div class="quem">
             <div>
-                <img class="perfil" src="img/perfil.jpeg">
+                <img class="perfil" src="img/fotos/perfil.jpeg">
                 <h2 class="nome">Carlos Alarcon</h2>
                 <p class="txt_msv">
                     Desenvolvedor De Games
@@ -134,7 +135,7 @@
             </div>
     
             <div>
-                <img class="perfil" src="img/perfil.jpeg">
+                <img class="perfil" src="img/fotos/perfil.jpeg">
                 <h2 class="nome">João Lucas</h2>
                 <p class="txt_msv">
                     Programador de Games
@@ -142,7 +143,7 @@
             </div>
     
             <div>
-                <img class="perfil" src="img/perfil.jpeg">
+                <img class="perfil" src="img/fotos/perfil.jpeg">
                 <h2 class="nome">Gustavo Rossilo</h2>
                 <p class="txt_msv">
                     Designer 3D
@@ -152,7 +153,7 @@
     
         <div class="quem">
             <div>
-                <img class="perfil" src="img/perfil.jpeg">
+                <img class="perfil" src="img/fotos/perfil.jpeg">
                 <h2 class="nome">Leonardo Macêdo</h2>
                 <p class="txt_msv">
                     Programador de Games
@@ -160,7 +161,7 @@
             </div>
     
             <div>
-                <img class="perfil" src="img/perfil.jpeg">
+                <img class="perfil" src="img/fotos/perfil.jpeg">
                 <h2 class="nome">Nickolas Garcia</h2>
                 <p class="txt_msv">
                     Roterista de Games
@@ -174,12 +175,12 @@
         <h1 class="titulo">Visite Nossos Amigos</h1>
         <div class="quem">
             <div class="amigo">
-                <img src="img/perfil.jpeg">
+                <img src="img/fotos/perfil.jpeg">
                 <button class="botoes">Visite Gub.com</button>
             </div>
     
             <div class="amigo">
-                <img src="img/perfil.jpeg">
+                <img src="img/fotos/perfil.jpeg">
                 <button class="botoes">Visite Gub.com</button>
             </div>
         </div>
@@ -187,7 +188,26 @@
 
     <!-- Rodapé: Localização e Redes Sociais -->
     <footer>
-        
+        <div class="rodape">
+            <div>
+                <h2 class="txt_rodape">Venha nos Visitar !</h2>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.
+                3247724394105!2d-46.72778649999999!3d-23.5208186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20
+                Godoy!5e0!3m2!1spt-BR!2sbr!4v1708795370014!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <div class="descricao">
+                <h2 class="txt_rodape">Visite Nossas Redes Sociais:</h2>
+                <div class="img_rodape">
+                    <img src="img/icon/wpp.png" alt="">
+                    <img src="img/icon/instagram.png" alt="">
+                    <img src="img/icon/linkedin.png" alt="">
+                </div>
+            </div>
+        </div>
+        <h4 id="copyright">© 2024 Sala18. Todos os direitos reservados. Desenvolvido por Sala 18 Studios.</h4>
     </footer>
 </body>
 <script src="js/script.js"></script>
