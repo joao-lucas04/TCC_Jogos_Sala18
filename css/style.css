@@ -92,6 +92,7 @@ video{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
+    text-align: justify;
 }
 .botoes{
     display: flex;
@@ -116,6 +117,26 @@ button:hover {
     box-shadow: 0px 0px 13px #bebebe; /* Adiciona uma sombra */
 }
 
+.programas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+}
+.img_programa{
+    width: 200px;
+    height: 200px;
+    margin-right: 3vw;
+}
+#img_programa_unity{
+    width: 400px;
+    height: 138px;
+    margin-right: 3vw;
+}
+#img_programa_bandlab{
+    width: 165px;
+    height: 165px;
+}
 
 
 
@@ -124,8 +145,8 @@ button:hover {
     margin-top: 3.3vw;
 }
 iframe{
-    width: 900px;
-    height: 500px;
+    width: 1400px;
+    height: 750px;
 }
 
 
@@ -150,7 +171,7 @@ iframe{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
-    text-align: center;
+    text-align: right;
 }
 .txt2{
     margin-right: 15vw;
@@ -160,7 +181,7 @@ iframe{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
 }
 .img_sobre{
     width: 270px;
@@ -182,7 +203,7 @@ iframe{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
-    text-align: center;
+    text-align: justify;
 }
 .msv {
     opacity: 0;
