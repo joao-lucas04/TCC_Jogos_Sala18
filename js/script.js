@@ -9,21 +9,21 @@ function transicao(secao){
             
         case 'jogos':
             window.scrollTo({
-                top: 700, 
+                top: 950, 
                 behavior: 'smooth' 
             });
 
             break;
         case 'sobre':
             window.scrollTo({
-                top: 1700,
+                top: 3000,
                 behavior: 'smooth' 
             });
             break;
 
         case 'quem':
             window.scrollTo({
-                top: 3045,
+                top: 4400,
                 behavior: 'smooth' 
             });
             break;
@@ -31,6 +31,13 @@ function transicao(secao){
         case 'local':
             window.scrollTo({
                 top: 10000, 
+                behavior: 'smooth' 
+            });
+            break;
+
+        case 'app':
+            window.scrollTo({
+                top: 2400, 
                 behavior: 'smooth' 
             });
             break;

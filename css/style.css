@@ -149,12 +149,19 @@ iframe{
     height: 750px;
 }
 
-
-
+#app{
+    display: flex;
+    margin-top: 7vw;
+    justify-content: center;
+    font-size: 60px;
+}
+.descricao1{
+    margin-right: 5.5vw;
+}
 
 .sobre{
     display: flex;
-    margin-top: 5vw;
+    margin-top: 6vw;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -203,7 +210,7 @@ iframe{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
-    text-align: justify;
+    text-align: center;
 }
 .msv {
     opacity: 0;
