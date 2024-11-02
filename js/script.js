@@ -1,9 +1,18 @@
+const btn = document.getElementById('volta_inicio');
+window.onscroll = function() {
+    if (window.scrollY < 200 || window.scrollY == 0) {
+        btn.style.display = 'none';
+    } else {
+        btn.style.display = 'block';
+    }
+};
+
 function transicao(secao){
     switch (secao) {
         case 'menu':
             window.scrollTo({
                 top: 0, 
-                behavior: 'smooth' 
+                behavior: 'smooth', 
             });
             break;
             
