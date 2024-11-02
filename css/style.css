@@ -321,152 +321,184 @@ footer{
 
 /* Media Query para Dispositivos Móveis (até 768px) */
 @media (max-width: 768px) {
-    #cabecalho{
+    #cabecalho {
         width: 100%;
         height: 12vw;
         position: absolute;
+        display: flex; /* Use flex para melhor controle de layout */
+        align-items: center; /* Centraliza verticalmente */
     }
-    #logo_cabeca{
+    
+    #logo_cabeca {
         width: 35px;
         height: 55px;
-        margin-right: 60vw;
-    }
-    .opcoes_cabeca{
-        display: none;
-    }
-    .btn_flutuante{
-        display: block;
+        margin-right: auto; /* Ajusta a margem para deixar espaço */
     }
 
+    .opcoes_cabeca {
+        display: none; /* Oculta as opções do cabeçalho */
+    }
 
-    video{
+    .btn_flutuante {
+        display: block; /* Mostra o botão flutuante */
+    }
+
+    video {
         margin-top: 12vw;
+        width: 100%; /* Adiciona largura total ao vídeo */
+        height: auto; /* Mantém a proporção */
     }
 
-    #jogo{
+    #jogo {
         margin-top: 8vw;
     }
-    .descricao{
+
+    .descricao {
         margin-left: 5.5vw;
     }
-    .titulo{
+
+    .titulo {
         font-size: 27px;
+        text-align: center; /* Centraliza o título */
     }
-    #capa{
+
+    #capa {
         width: 260px;
         height: 355px;
     }
-    #sinopse{
+
+    #sinopse {
         margin-top: 2vw;
         font-size: 15px;
     }
-    .botoes{
+
+    .botoes {
         margin-top: 3vw;
     }
+
     button {
         padding: 2vw 3vw;
+        font-size: 16px; /* Aumenta a legibilidade do botão */
     }
 
-    #trailer{
+    #trailer {
         margin-top: 7.5vw;
     }
-    iframe{
+
+    iframe {
         width: 100%;
         height: 385px;
+        border: none; /* Remove bordas do iframe */
     }
 
-    .programas{
+    .programas {
         margin-top: 1vw;
+        display: flex; /* Para melhor layout dos programas */
+        flex-wrap: wrap; /* Permite quebra de linha se necessário */
     }
-    .img_programa{
+
+    .img_programa {
         width: 100px;
         height: 100px;
         margin-right: 5vw;
     }
-    #img_programa_unity{
+
+    #img_programa_unity {
         width: 180px;
         height: 65px;
         margin-right: 5vw;
     }
-    #img_programa_bandlab{
+
+    #img_programa_bandlab {
         width: 80px;
         height: 80px;
     }
 
-    #app{
+    #app {
         margin-top: 15vw;
     }
 
-    .sobre{
+    .sobre {
         margin-top: 15vw;
     }
 
-    .txt1{
+    .txt1 {
         margin-left: 10vw;
         font-size: 12px;
     }
-    .txt2{
+
+    .txt2 {
         margin-right: 10vw;
         font-size: 12px;
     }
-    .img_sobre{
+
+    .img_sobre {
         width: 220px;
         height: 310px;
     }
 
-    .sobre_msv{
+    .sobre_msv {
         margin-top: 10vw;
     }
-    .txt_msv{
+
+    .txt_msv {
         margin-top: 1vw;
         width: 28vw;
         font-size: 15px;
         text-align: justify;
     }
 
-    .quem_container{
+    .quem_container {
         margin-top: 12vw;
-        
     }
- 
-    .quem{
+
+    .quem {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .perfil{
+
+    .perfil {
         margin-top: 10vw;
         width: 165px;
         height: 170px;
-        border-radius: 80vw;
+        border-radius: 50%; /* Muda para 50% para círculo */
     }
-    .nome{
+
+    .nome {
         margin-top: 1vw;
         font-size: 32px;
+        text-align: center; /* Centraliza o nome */
     }
 
-    .amigo{
+    .amigo {
         margin-top: 1vw;
     }
 
-
-    footer{
+    footer {
         margin-top: 20vw;
-        height: 65vw;
+        height: auto; /* Muda para auto para melhor controle de altura */
+        padding: 4.5vw 0; /* Adiciona padding para melhorar o espaçamento */
     }
-    .rodape{
+
+    .rodape {
         padding-top: 4.5vw;
     }
-    .txt_rodape{
+
+    .txt_rodape {
         margin-bottom: 6vw;
         font-size: 18px;
+        text-align: center; /* Centraliza o texto do rodapé */
     }
-    #copyright{
+
+    #copyright {
         margin-top: 4.5vw;
+        text-align: center; /* Centraliza o copyright */
     }
-    
-    #mapa{
-        width: 45vw;
+
+    #mapa {
+        width: 90%; /* Ajusta a largura do mapa para caber melhor */
         height: 40vw;
+        margin: 0 auto; /* Centraliza o mapa */
     }
 }
