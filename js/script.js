@@ -1,9 +1,9 @@
 const btn = document.getElementById('volta_inicio');
 window.onscroll = function() {
-    if (window.scrollY < 200 || window.scrollY == 0) {
-        btn.style.display = 'none';
-    } else {
+    if (window.scrollY > 200 && window.innerWidth <= 768) {
         btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
     }
 };
 
