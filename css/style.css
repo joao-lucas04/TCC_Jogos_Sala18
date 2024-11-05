@@ -230,7 +230,7 @@ iframe{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
-    text-align: center;
+    text-align: justify;
 }
 .msv {
     opacity: 0;
@@ -252,14 +252,14 @@ iframe{
 }
 .quem{
     display: flex;
-    margin-top: 5vw;
+    margin-top: 2.5vw;
     text-align: center;
     justify-content: space-evenly;
 }
 .perfil{
     width: 165px;
     height: 170px;
-    border-radius: 80vw;
+    border-radius: 50%;
 }
 .nome{
     margin-top: 1vw;
