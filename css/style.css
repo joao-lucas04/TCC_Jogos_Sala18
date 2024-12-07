@@ -144,18 +144,18 @@ button:hover {
     margin-top: 1vw;
 }
 .img_programa{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin-right: 3vw;
 }
 #img_programa_unity{
-    width: 400px;
-    height: 138px;
+    width: 200px;
+    height: 70px;
     margin-right: 3vw;
 }
 #img_programa_bandlab{
-    width: 165px;
-    height: 165px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -165,8 +165,8 @@ button:hover {
     margin-top: 3.3vw;
 }
 iframe{
-    width: 1400px;
-    height: 750px;
+    width: 1000px;
+    height: 550px;
 }
 
 #app{
@@ -183,6 +183,7 @@ iframe{
     display: flex;
     margin-top: 6vw;
     justify-content: center;
+    
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -198,7 +199,7 @@ iframe{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
-    text-align: right;
+    text-align: justify;
 }
 .txt2{
     margin-right: 15vw;
@@ -208,7 +209,7 @@ iframe{
     font-style: normal;
     font-size: 18px;
     color: #FFFFFF;
-    text-align: left;
+    text-align: justify;
 }
 .img_sobre{
     width: 270px;
